@@ -1,0 +1,182 @@
+/* Configurações gerais */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-text-size-adjust: 100%;
+}
+
+:root {
+  font-size: 62.5%;
+
+  /* Colors */
+  --gray-400: #9ca3af;
+  --purple-600: rgba(146, 51, 234, 0.15);
+  --yellow-50: #fefce8;
+  --yellow-400: #facc15;
+}
+
+body{
+  font-size: 1.6rem;
+  color: var(--yellow-50);
+}
+
+img.background {
+  position: absolute;
+  z-index: -1;
+  width: 100vw;
+  height: 100vh;
+  filter: brightness(50%);
+}
+
+.wrapper {
+  padding: 2rem 4.8rem;
+  width: 100vw;
+  height: 100vh;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.ph {
+  color: var(--yellow-400);
+}
+
+/* Fonts and Colors */
+.inter {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings: "slnt" 0;
+}
+
+ul.inter li {
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 1.8rem;
+}
+
+ul.inter li:hover {
+  font-weight: 700;
+  color: var(--yellow-400);
+
+  border-bottom: solid 2px var(--yellow-400);
+}
+
+#buttons a.inter{
+  font-weight: 700;
+  font-size: 1.6rem;
+  color: var(--yellow-400);
+}
+
+h1 {
+  font-size: 7.2rem;
+}
+
+h1 span.pacifico-regular {
+  font-family: "Pacifico", cursive;
+  font-weight: 400;
+  font-style: normal;
+  color: var(--yellow-400);
+  text-decoration: underline;
+}
+
+.source-code {
+  font-family: "Source Code Pro", monospace;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-size: 2rem;
+}
+
+.motto.source-code p{
+  display: inline-block;
+  font-weight: 400;
+  color: var(--gray-400);
+  text-decoration: line-through;
+}
+
+.source-code span {
+  font-weight: 700;
+  color: var(--yellow-400);
+  text-decoration: none;
+}
+
+/* Header */
+header {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header nav ul {
+  display: flex;
+  gap: 4.8rem;
+  list-style: none;
+}
+
+/* Main */
+main .motto {
+  margin: 1.2rem 0 2.8rem;
+}
+
+#buttons {
+  display: flex;
+  gap: 4.2rem;
+}
+
+button {
+  background-color: var(--purple-600);
+  border-radius: 16px;
+  padding: 2rem 1.6rem;
+  border: 2px solid var(--yellow-400);
+
+  display: flex;
+  justify-content: center;
+
+  transition: all 350ms;
+}
+
+#buttons button:hover {
+  background-color: var(--yellow-400);
+  border: 2px solid var(--yellow-50);
+  
+  & a, i {
+    color: var(--yellow-50);
+  }
+}
+
+#buttons button a {
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  gap: 1.2rem;
+}
+
+#buttons .largeButton {
+  width: 32rem;
+}
+
+#buttons .regularButton {
+  width: 26rem;
+}
+
+/* Footer */
+footer {
+  width: 100%;
+
+  display: flex;
+  justify-content: center;
+}
+
+footer i {
+  font-size: 3.2rem;
+}
+
