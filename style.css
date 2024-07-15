@@ -14,8 +14,115 @@
 
 :root {
     font-size: 62.5%;
+
+    --border-radius-default: 1.6rem;
+    --icons-size-default: 3.2rem;
 }
 
 body {
     background-color: aquamarine;
+    font-size: 1.6rem;
+
+    padding: 1.6rem 2.4rem;
+
+    display: flex;
+    width: 100%;
+}
+
+ul,
+a {
+    list-style: none;
+    text-decoration: none;
+    color: orange;
+}
+
+/* Navigation */
+
+nav {
+    position: fixed;
+
+    width: 44rem;
+    height: 48rem;
+
+    background-color: black;
+    color: orange;
+
+    border-radius: var(--border-radius-default);
+}
+
+.card {
+    padding-inline: 1.6rem;
+    margin-bottom: 2.4rem;
+}
+
+.card.image {
+    padding: 0;
+
+    & .background {
+        border-top-left-radius: var(--border-radius-default);
+        border-top-right-radius: var(--border-radius-default);
+
+        width: 100%;
+        height: 12rem;
+    }
+
+    & figure {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        position: relative;
+        bottom: 8rem;
+
+        margin-bottom: -5.4rem;
+
+        & img {
+            width: 16rem;
+            height: 16rem;
+
+            border-radius: var(--border-radius-default);
+        }
+
+        & figcaption {
+            font-size: 2.8rem;
+
+            margin-top: 1.2rem;
+        }
+
+
+    }
+}
+
+.card.about {
+
+    & h4 {
+        font-size: 1.6rem;
+        color: orange;
+        opacity: 0.5;
+    }
+
+    .stacks {
+        display: flex;
+        align-items: center;
+        gap: 2.8rem;
+
+
+        i {
+            font-size: var(--icons-size-default);
+        }
+    }
+}
+
+.card.links {
+    display: flex;
+    gap: 2.8rem;
+
+    & i {
+        font-size: var(--icons-size-default);
+    }
+}
+
+main {
+    margin-left: auto;
+    width: 60rem;
 }
